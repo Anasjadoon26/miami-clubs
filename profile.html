@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your profile — Miami Clubs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">Miami Clubs</a>
+  <nav>
+    <a href="index.html">Explore</a>
+    <a href="profile.html" class="active">Profile</a>
+  </nav>
+</header>
+
+<main class="profile">
+  <div class="who">
+    <div class="avatar" id="avatar">?</div>
+    <div>
+      <h1 id="hello">Your profile</h1>
+      <p class="sub">Settings are saved in this browser.</p>
+    </div>
+  </div>
+
+  <form id="profileForm" class="panel">
+    <h2>Account</h2>
+    <label>Full name <input name="name" autocomplete="name" placeholder="Alex Morgan"></label>
+    <label>Email <input name="email" type="email" autocomplete="email" placeholder="alex@example.com"></label>
+    <label>Home city <input name="city" placeholder="Miami, FL"></label>
+
+    <h2>Preferences</h2>
+    <label>Looking for
+      <select name="interest">
+        <option>Dining</option>
+        <option>Beach and pool</option>
+        <option>Events</option>
+        <option>Family membership</option>
+      </select>
+    </label>
+    <label>Appearance
+      <select name="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" name="notify"> Email me about club events</label>
+
+    <button type="submit" class="primary">Save changes</button>
+    <span id="saved" class="saved" role="status"></span>
+  </form>
+
+  <section class="panel">
+    <h2>Saved clubs</h2>
+    <ul id="favList" class="favs"></ul>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/agent.js"></script>
+</body>
+</html>

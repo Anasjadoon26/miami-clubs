@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Clubs — Featured private clubs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">Miami Clubs</a>
+  <nav>
+    <a href="index.html" class="active">Explore</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
+
+<main class="split">
+  <section class="map-pane" aria-label="Map">
+    <div id="map"></div>
+    <div class="map-tools">
+      <button id="btnReset" type="button">Show all</button>
+      <button id="btnLayer" type="button">Satellite</button>
+    </div>
+  </section>
+
+  <aside class="list-pane" aria-label="Featured clubs">
+    <h1>Featured clubs</h1>
+    <p class="sub">Hover or tap a club to fly to it on the map.</p>
+    <ul id="clubList" class="clubs"></ul>
+  </aside>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/agent.js"></script>
+</body>
+</html>
